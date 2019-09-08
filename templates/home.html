@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block title %}ANASAYFA - {{block.super}} {% endblock %}
+
+{% block body %}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-3 col-sm-6" style="background-color:red">birinci</div>
+        <div class="col-md-3 col-sm-6" style="background-color:blue">ikinci</div>
+        <div class="col-md-3 col-sm-6" style="background-color:purple">üçüncü</div>
+        <div class="col-md-3 col-sm-6" style="background-color:pink">dördüncü</div>
+    </div>
+
+    Hoşgeldiniz, {{ request.user.get_full_name }}
+</div>
+
+{% endblock %}
